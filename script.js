@@ -1,12 +1,23 @@
-// Testing generating random upper and lower case letters
+// Testing generating random characters
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 } 
 function getRandomUpper() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 65);
 } 
+
+function getRandomNumber() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
+} 
+
+function getRandomSymbol() {
+  var symbols = "!@#$%^&*(){}[]=<>/,."
+  return symbols[Math.floor(Math.random() * symbols.length)];
+}
 console.log("getRandomLower() = ", getRandomLower());
 console.log("getRandomUpper() = ", getRandomUpper());
+console.log("getRandomNumber() = ", getRandomNumber());
+console.log("getRandomSymbol() = ", getRandomSymbol());
 
 
 /*// Assignment Code
